@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: "Public Sans", sans-serif;
+    background-color: #E4E0E1;
+        overflow-x: hidden;
+   
+}
+nav img {
+    width: 250px;
+}
+nav { 
+    width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #AB886D 2px solid;
+    background-color: #E4E0E1;
+    overflow-x: hidden;
+  }
+nav ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+nav li {
+    list-style-type: none;
+  }
+nav li a {
+    padding: 20px 25px;
+    border-radius: 99px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #493628;
+    transition: all 0.2s ease-in-out;
+  }
+nav li:hover a {
+    background-color: #D6C0B3;
+    color: rgb(0, 0, 0);
+  }
+  #home {
+    width: 100%;
+    height: 100vh; 
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    position: relative; 
+
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+    opacity: 0.8;
+    border-bottom: #AB886D 2px solid;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 0;
+    position: relative;
+    opacity: 0.9; 
+}
+#home h2, #home p {
+    position: relative; 
+    z-index: 2; 
+    color: #ffffff;
+    text-align: center; 
+    font-size: 2rem;
+    line-height: 40px;
+    width: 100%; 
+    max-width: 700px; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+}
+#home p{
+    font-weight: 400;
+}
+  #guesthouse {
+    background-color: #E4E0E1;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    text-align: center; 
+}
+.guesthouse {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #D6C0B3;
+    text-align: center;;
+    border-radius: 20px;
+    box-shadow: #000000 0px 4px 4px;
+    padding: 20px;
+    width: calc(40% - 10px);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card p{
+    font-size: 20px;
+    margin: 10px;
+    color: #000000;
+}
+.image-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+.guesthouse-img {
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #AB886D;
+    border: #AB886D 1px solid;
+}
+
+button:hover {
+    background-color: #D6C0B3;
+    color: #AB886D;
+}
+#about {
+        width: 100%;
+        height: 200px; 
+        margin-inline: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        position: relative; 
+        line-height: 30px;
+}
+#about p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000000;
+}
+aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+    z-index: 2;
+  }
+  aside .social-media {
+    height: 100%;
+    display: flex;
+    
+  }
+  aside .social-media img {
+    width: 100px;
+   }
+   aside .social-media p{
+    margin: -15px;
+   }
+  aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #AB886D;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border: #493628 2px solid;
+  }
+  aside .social-media li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #493628;
+    transition: all 0.1s ease-in-out;
+  }
+
+  aside .social-media li:hover {
+    color: white;
+  }
+
+footer {
+    overflow-x: hidden;
+    padding: 20px;
+    color: white;
+    background-color: #493628;
+    text-align: center;
+    font-weight: 600;
+  }    
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header.navbar .nav-list ul {
+        flex-direction: column;
+        gap: 1rem; 
+    }
+
+    #home h2 {
+    }
+
+    .guesthouse {
+        flex-direction: column;
+        padding: 10px; 
+    }
+
+    .card {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    .image-container {
+        flex-direction: column; 
+    }
+
+    button {
+        width: 100%; 
+        margin: 5px 0;
+    }
+}
+
+/* Tambahan responsivitas untuk layar lebih kecil (seperti smartphone) */
+@media (max-width: 480px) {
+    #home h2 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .guesthouse-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+    .card img{
+        width: 100%;
+    }
+button{
+    width: 100%;
+}
+    .navbar img {
+        width: 150px;
+    }
+}
